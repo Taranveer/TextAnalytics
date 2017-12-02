@@ -59,7 +59,7 @@ if __name__ == "__main__":
     corpus_file = args.corpus_file
     corpus = load(corpus_file)
     
-    corpus_agg = aggregation(corpus, args.agg)
+    corpus_agg = aggregation([corpus], args.agg)
     
     dump(corpus_agg, args.output)
 

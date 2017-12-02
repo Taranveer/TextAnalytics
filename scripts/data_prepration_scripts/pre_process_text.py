@@ -60,7 +60,7 @@ def getCleanText(text, stemming = False, word_size=-1):
     
     #words = word_tokenize(lower)
     #words = CountVectorizer().build_tokenizer()(letters_only.lower())
-    sent_tokenize_list = sent_tokenize(text.lower().decode('utf8'))
+    sent_tokenize_list = sent_tokenize(text.lower())
     
 
     #print "tokenization done"
